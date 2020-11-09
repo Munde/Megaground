@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E292B73A-6C48-410E-82CD-CABF84515D48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F905729-69EA-4E5C-A1D7-704631B0135C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{81A75DD5-D303-48E8-B71D-B0CF5A42A7FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{95F6D809-D613-45F8-96FB-39F7B27D770E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{51440984-E5F4-4051-83A4-E8DCBE577451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Megaground.API", "src\UI\Megaground.API\Megaground.API.csproj", "{D68AB3F9-4152-44DD-9067-7A491F735619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Megaground.Infrastructure", "src\Infrastructure\Megaground.Infrastructure\Megaground.Infrastructure.csproj", "{3FE1660C-97B7-4C73-A659-054133D821D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Megaground.SharedKenel", "src\Core\Megaground.SharedKenel\Megaground.SharedKenel.csproj", "{F41C955A-F035-47E9-B898-745EADEF805C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Megaground.Services", "src\Core\Megaground.Services\Megaground.Services.csproj", "{F7A6E7B8-402E-483A-B169-C1302479F7F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68AB3F9-4152-44DD-9067-7A491F735619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68AB3F9-4152-44DD-9067-7A491F735619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68AB3F9-4152-44DD-9067-7A491F735619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68AB3F9-4152-44DD-9067-7A491F735619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE1660C-97B7-4C73-A659-054133D821D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE1660C-97B7-4C73-A659-054133D821D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE1660C-97B7-4C73-A659-054133D821D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE1660C-97B7-4C73-A659-054133D821D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41C955A-F035-47E9-B898-745EADEF805C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41C955A-F035-47E9-B898-745EADEF805C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41C955A-F035-47E9-B898-745EADEF805C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41C955A-F035-47E9-B898-745EADEF805C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A6E7B8-402E-483A-B169-C1302479F7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A6E7B8-402E-483A-B169-C1302479F7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A6E7B8-402E-483A-B169-C1302479F7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A6E7B8-402E-483A-B169-C1302479F7F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81A75DD5-D303-48E8-B71D-B0CF5A42A7FA} = {E292B73A-6C48-410E-82CD-CABF84515D48}
+		{95F6D809-D613-45F8-96FB-39F7B27D770E} = {E292B73A-6C48-410E-82CD-CABF84515D48}
+		{51440984-E5F4-4051-83A4-E8DCBE577451} = {E292B73A-6C48-410E-82CD-CABF84515D48}
+		{D68AB3F9-4152-44DD-9067-7A491F735619} = {81A75DD5-D303-48E8-B71D-B0CF5A42A7FA}
+		{3FE1660C-97B7-4C73-A659-054133D821D6} = {95F6D809-D613-45F8-96FB-39F7B27D770E}
+		{F41C955A-F035-47E9-B898-745EADEF805C} = {51440984-E5F4-4051-83A4-E8DCBE577451}
+		{F7A6E7B8-402E-483A-B169-C1302479F7F4} = {51440984-E5F4-4051-83A4-E8DCBE577451}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82E222BF-F494-4526-9EF5-09C18032F834}
+	EndGlobalSection
+EndGlobal
