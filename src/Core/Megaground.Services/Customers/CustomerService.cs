@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Megaground.Services.Customers
 {
-    internal class CustomerService : ICustomerService
+    public class CustomerService : ICustomerService
     {
-        private ICustomerRepository _customerRepostory;
+        private readonly ICustomerRepository _customerRepostory;
 
         public CustomerService(ICustomerRepository customerRepostory)
         {

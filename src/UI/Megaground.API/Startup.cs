@@ -1,3 +1,6 @@
+using Megaground.Infrastructure.Data;
+using Megaground.Infrastructure.Repositories.Customers;
+using Megaground.Services.Customers;
 using Megaground.SharedKenel.Domain.Repositories.Customers;
 using Megaground.SharedKenel.Domain.Services.Customers;
 
@@ -31,8 +34,9 @@ namespace Megaground.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddScoped<ICustomerService, ICustomerService>();
-            services.AddScoped<ICustomerRepository, ICustomerRepository>();
+            services.AddDbContext<MegagroundContext>();
+            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
