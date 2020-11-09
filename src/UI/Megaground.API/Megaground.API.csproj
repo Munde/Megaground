@@ -8,4 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Megaground.Services\Megaground.Services.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Megaground.Infrastructure\Megaground.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,3 +1,6 @@
+using Megaground.SharedKenel.Domain.Repositories.Customers;
+using Megaground.SharedKenel.Domain.Services.Customers;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +30,9 @@ namespace Megaground.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddScoped<ICustomerService, ICustomerService>();
+            services.AddScoped<ICustomerRepository, ICustomerRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
